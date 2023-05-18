@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">MyFitnessToday</string>
+
+    <!--  ScreenLogin  -->
+    <string name="text_placeholder_email_screenLogin">Digite o seu e-mail</string>
+    <string name="text_placeholder_password_screenLogin">Digite a sua senha</string>
+    <string name="text_placeholder_forgotPassword_screenLogin">Esqueceu sua senha?</string>
+    <string name="text_placeholder_btnLogin_screenLogin">Acessar</string>
+    <string name="text_placeholder_btnRegister_screenLogin">Não possui uma conta? Cadastre-se</string>
+
+    <!--  ScreenRegister  -->
+    <string name="text_placeholder_fullName_screenRegister">Nome completo</string>
+    <string name="text_placeholder_age_screenRegister">Digite sua idade</string>
+    <string name="text_placeholder_email_screenRegister">Digite o seu e-mail</string>
+    <string name="text_placeholder_password_screenRegister">Crie uma senha</string>
+    <string name="text_placeholder_confirmPassword_screenRegister">Confirme sua senha</string>
+    <string name="text_placeholder_btnRegister_screenRegister">Cadastrar-se</string>
+
+    <!-- ScreenEditProfile -->
+    <string name="text_placeholder_fullName_screenEdit">Nome completo</string>
+    <string name="text_placeholder_age_screenEdit">Nome completo</string>
+    <string name="text_placeholder_email_screenEdit">Seu E-mail</string>
+    <string name="text_placeholder_password_screenEdit">Seu E-mail</string>
+    <string name="text_placeholder_confirmPassword_screenEdit">Seu E-mail</string>
+
+    <!-- ScreenImc  -->
+    <string name="text_imc_description_ScrenImc">O Índice de Massa Corporal (IMC) é uma medida comum para avaliar o peso saudável em relação à altura. Calcula-se dividindo o peso em quilogramas pelo quadrado da altura em metros.</string>
+    <string name="text_placeholder_weight_ScrenImc">Seu peso (kg)</string>
+    <string name="text_placeholder_height_ScrenImc">Sua altura (cm)</string>
+    <string name="text_btnResult_ScrenImc">Seu resultado:</string>
+    <string name="text_btnOverweight_ScrenImc">Sobrepeso</string>
+    <string name="text_btnNormalweight_ScrenImc">Peso normal</string>
+    <string name="text_btnSend_ScrenImc">Enviar</string>
 </resources>

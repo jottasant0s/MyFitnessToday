@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- app colors -->
+    <color name="color_background_app">#1E0F40</color>
+    <color name="color_btn_app">#F24822</color>
+    <color name="color_background_placeholder">#FFFFFF</color>
+    <color name="color_background_text_placeholder">#000000</color>
+    <color name="color_text_placeholder_gray">#979797</color>
 </resources>
