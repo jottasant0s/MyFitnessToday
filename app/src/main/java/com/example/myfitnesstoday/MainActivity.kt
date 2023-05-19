@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
             val email = editEmail.text.toString()
             val password = editPassword.text.toString()
             validateRegisterForm(email, password)
+
+            val i = Intent(this, DashboardActivity::class.java)
+            startActivity(i)
         }
 
         btnRegister = findViewById(R.id.btn_register)

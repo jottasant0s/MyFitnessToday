@@ -15,4 +15,8 @@
     <color name="color_background_placeholder">#FFFFFF</color>
     <color name="color_background_text_placeholder">#000000</color>
     <color name="color_text_placeholder_gray">#979797</color>
+    <color name="color_user_dashboard">#F24822</color>
+    <color name="color_age_dashboard">#fff</color>
+    <color name="color_background_dashboard_app">#FFF</color>
+    <color name="color_btn_dashboard_app">#1E0F40</color>
 </resources>
