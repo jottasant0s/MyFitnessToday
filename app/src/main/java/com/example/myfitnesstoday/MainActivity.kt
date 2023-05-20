@@ -25,10 +25,12 @@ class MainActivity : AppCompatActivity() {
         btnAcces.setOnClickListener {
             val email = editEmail.text.toString()
             val password = editPassword.text.toString()
-            validateLoginForm(email, password)
-
-            val i = Intent(this, DashboardActivity::class.java)
-            startActivity(i)
+            if (!validateLoginForm(email, password)) {
+                Toast.makeText(this, R.string.Warning_edit, Toast.LENGTH_SHORT).show()
+            } else {
+                val i = Intent(this, DashboardActivity::class.java)
+                startActivity(i)
+            }
         }
 
         btnRegister = findViewById(R.id.btn_register)
@@ -38,9 +40,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun validateLoginForm(email: String, password: String) {
-        if (email.isEmpty() && password.isEmpty()) {
-            Toast.makeText(this, R.string.Warning_edit, Toast.LENGTH_SHORT).show()
-        }
+    private fun validateLoginForm(email: String, password: String) : Boolean {
+        return (email.isNotEmpty() && password.isNotEmpty())
     }
 }
