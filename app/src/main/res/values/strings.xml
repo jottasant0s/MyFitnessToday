@@ -27,14 +27,29 @@
     <string name="text_imc_description_ScrenImc">O Índice de Massa Corporal (IMC) é uma medida comum para avaliar o peso saudável em relação à altura. Calcula-se dividindo o peso em quilogramas pelo quadrado da altura em metros.</string>
     <string name="text_placeholder_weight_ScrenImc">Seu peso (kg)</string>
     <string name="text_placeholder_height_ScrenImc">Sua altura (cm)</string>
-    <string name="text_btnResult_ScrenImc">Seu resultado:</string>
+    <string name="text_btnResult_ScrenImc">Resultado</string>
     <string name="text_btnOverweight_ScrenImc">Sobrepeso</string>
     <string name="text_btnNormalweight_ScrenImc">Peso normal</string>
-    <string name="text_btnAccess_ScrenImc">Acessar</string>
+    <string name="text_btnCalculate_ScrenImc">Calcular</string>
 
     <!--  TextWarning  -->
-    <string name="Warning_edit">Por favor, insira somente números neste campo.</string>
+    <string name="warning_edit">Por favor, insira somente dados válidos neste campo.</string>
+    <string name="warning_imc">Por favor, insira somente números neste campo.</string>
+
+    <!-- Dashboad -->
     <string name="name_user_dashboard">Nome do usuário</string>
     <string name="age_user_dashboard">20 anos</string>
     <string name="imc_name_dashboard_item">IMC</string>
+
+    <!-- resultsImc -->
+    <string name="imc_severely_low_weight">Severamente abaixo do peso</string>
+    <string name="imc_very_low_weight">Muito abaixo do peso</string>
+    <string name="imc_low_weight">Abaixo do peso</string>
+    <string name="normal">Normal</string>
+    <string name="imc_high_weight">Acima do peso</string>
+    <string name="imc_so_high_weight">Moderadamente obeso</string>
+    <string name="imc_severely_high_weight">Severamente obeso</string>
+    <string name="imc_extreme_weight">Extremamente obeso</string>
+    <string name="imc_response">O seu Imc: %1$.2f</string>
+
 </resources>

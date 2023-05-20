@@ -19,4 +19,6 @@
     <color name="color_age_dashboard">#fff</color>
     <color name="color_background_dashboard_app">#FFF</color>
     <color name="color_btn_dashboard_app">#1E0F40</color>
+    <color name="color_button_imc">#F24822</color>
+    <color name="color_edit_placeholder_dashboard">#FFFFFF</color>
 </resources>

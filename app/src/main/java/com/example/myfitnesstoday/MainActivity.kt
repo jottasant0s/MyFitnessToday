@@ -26,7 +26,12 @@ class MainActivity : AppCompatActivity() {
             val email = editEmail.text.toString()
             val password = editPassword.text.toString()
             if (!validateLoginForm(email, password)) {
-                Toast.makeText(this, R.string.Warning_edit, Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    R.string.warning_edit,
+                    Toast.LENGTH_SHORT
+                )
+                    .show()
             } else {
                 val i = Intent(this, DashboardActivity::class.java)
                 startActivity(i)
@@ -40,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun validateLoginForm(email: String, password: String) : Boolean {
+    private fun validateLoginForm(email: String, password: String): Boolean {
         return (email.isNotEmpty() && password.isNotEmpty())
     }
 }
