@@ -36,5 +36,5 @@
     <string name="Warning_edit">Por favor, insira somente números neste campo.</string>
     <string name="name_user_dashboard">Nome do usuário</string>
     <string name="age_user_dashboard">20 anos</string>
-    <string name="imc_name_dashboard">IMC</string>
+    <string name="imc_name_dashboard_item">IMC</string>
 </resources>

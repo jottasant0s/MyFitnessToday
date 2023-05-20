@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="45dp"
         android:src="@drawable/logo_app" />
@@ -35,7 +35,7 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/background_input_white"
         android:hint="@string/text_placeholder_password_screenLogin"
-        android:inputType="number"
+        android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="@color/color_background_text_placeholder" />
 

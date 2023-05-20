@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         btnAcces.setOnClickListener {
             val email = editEmail.text.toString()
             val password = editPassword.text.toString()
-            validateRegisterForm(email, password)
+            validateLoginForm(email, password)
 
             val i = Intent(this, DashboardActivity::class.java)
             startActivity(i)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun validateRegisterForm(email: String, password: String) {
+    private fun validateLoginForm(email: String, password: String) {
         if (email.isEmpty() && password.isEmpty()) {
             Toast.makeText(this, R.string.Warning_edit, Toast.LENGTH_SHORT).show()
         }
