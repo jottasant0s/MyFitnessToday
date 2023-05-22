@@ -3,6 +3,7 @@ package com.example.myfitnesstoday
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
@@ -26,7 +27,12 @@ class ImcActivity : AppCompatActivity() {
         val buttonCalculate: Button = findViewById(R.id.btn_calculate)
         buttonCalculate.setOnClickListener {
             if (!validate()) {
-                Toast.makeText(this, R.string.warning_imc, Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    R.string.warning_imc,
+                    Toast.LENGTH_SHORT
+                )
+                    .show()
                 return@setOnClickListener
             }
 
@@ -35,8 +41,7 @@ class ImcActivity : AppCompatActivity() {
 
             val result = calculateImc(w, h)
             val responseImc = imcResponse(result)
-            textResult.setText(getString(responseImc))
-
+            textResult.text = getString(responseImc)
 
             val service = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             service.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
@@ -56,11 +61,11 @@ class ImcActivity : AppCompatActivity() {
         }
     }
 
-    private fun calculateImc(weight: Int, height: Int) : Double {
+    private fun calculateImc(weight: Int, height: Int): Double {
         return weight / ((height / 100.0) * (height / 100.0))
     }
 
-    private fun validate() : Boolean {
+    private fun validate(): Boolean {
         return (editWeight.text.toString().isNotEmpty()
                 && editHeight.text.toString().isNotEmpty()
                 && !editWeight.text.toString().startsWith("0")
